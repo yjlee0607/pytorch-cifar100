@@ -1,3 +1,14 @@
+# Pytorch-cifar100 for Nota
+## Train
+```
+python train.py -net /root/workspace/pytorch-cifar100/svd80.pt  -gpu -lr 0.001 -warm 0
+```
+
+## Test
+```
+
+```
+
 # Pytorch-cifar100
 
 practice on cifar100 using pytorch

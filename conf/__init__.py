@@ -2,7 +2,7 @@
 
 author baiyu
 """
-import conf.global_settings as settings
+import conf.npmc_settings as settings
 
 class Settings:
     def __init__(self, settings):
