@@ -4,10 +4,34 @@
 python train.py -net /root/workspace/pytorch-cifar100/svd80.pt  -gpu -lr 0.001 -warm 0
 ```
 
-## Test
+### Loading Models
+* Pretrained Models
+    * mobilenetv2
+    * repvgg
+    * vgg16
+```
+python train.py -net mobilenetv2  -gpu -lr 0.001 -warm 0
+```
+* Saved Models
+    * model path
+```
+python train.py -net /root/workspace/pytorch-cifar100/svd80.pt  -gpu -lr 0.001 -warm 0
+```
+* Custom Models
+    * Please change code (train.py) like
 ```
 
+# net = get_network_npmc(args)
+net = CustomModel()
 ```
+
+
+## Test
+```
+python test.py -net /root/workspace/pytorch-cifar100/checkpoint/mobilenetv2_p10/Thursday_13_April_2023_04h_48m_04s/mobilenetv2_p10-10-regular.pt -gpu
+```
+
+
 
 # Pytorch-cifar100
 
